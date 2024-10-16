@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { Calendar as CalendarIcon, Plus, Search, TestTube, FileText, AlertTriangle } from 'lucide-react'
+import { Calendar as CalendarIcon, Plus, Search, AlertTriangle } from 'lucide-react'
 import { Calendar } from "@/components/ui/calendar"
 import { format } from "date-fns"
 import Link from 'next/link'
@@ -60,6 +60,8 @@ export function LaboratoryManagementComponent() {
   const [activeTab, setActiveTab] = useState('labTests')
   const [isCalendarOpen, setIsCalendarOpen] = useState(false)
   const [activeDate, setActiveDate] = useState<'orderDate' | 'collectionDate'>('orderDate')
+
+  console.log(activeDate)
 
   const handleLabTestInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target

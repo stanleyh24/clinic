@@ -17,7 +17,7 @@ export function DashboardComponent() {
     { name: 'Staff Management',path:"/staff", icon: <UserCog className="h-4 w-4" /> },
     { name: 'Pharmacy',path:"/pharmacy", icon: <Pill className="h-4 w-4" /> },
     { name: 'Laboratory',path:"/laboratory", icon: <TestTube className="h-4 w-4" /> },
-    { name: 'Reports & Analytics', icon: <BarChart className="h-4 w-4" /> },
+    { name: 'Reports & Analytics',path:"/report", icon: <BarChart className="h-4 w-4" /> },
   ]
 
   return (
